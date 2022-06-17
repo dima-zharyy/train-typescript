@@ -167,28 +167,86 @@ export {};
 //   }
 // }
 
+// class UseStatic {
+//   private static count = 0;
+
+//   constructor() {
+//     UseStatic.count += 1;
+//   }
+
+//   public static itStaticMethod() {
+//     console.log("Run static method");
+//   }
+
+//   public showCount() {
+//     console.log(UseStatic.count);
+//   }
+// }
+
+// const obj1 = new UseStatic();
+// const obj2 = new UseStatic();
+// const obj3 = new UseStatic();
+
+// obj1.showCount();
+// obj2.showCount();
+// obj3.showCount();
+
+// UseStatic.itStaticMethod();
+
+// class House {
+//   private tenants: string[] = [];
+
+//   constructor(protected street: string, public readonly type: string) {}
+
+//   showStreet(): void {
+//     console.log("Address: ", this.street);
+//   }
+
+//   addTenants(name: string): void {
+//     this.tenants.push(name);
+//   }
+
+//   showTenants(): void {
+//     console.log(this.tenants);
+//   }
+// }
+
+// class WoodenHouse extends House {
+//   constructor(street: string, private hostHouse: string) {
+//     super("wood", street);
+//   }
+
+//   public showStreet(): void {
+//     console.log("Host is: ", this.hostHouse);
+//     console.log("Address: ", this.street);
+//   }
+
+//   public showHost(): void {
+//     console.log(this.hostHouse);
+//   }
+// }
+
+// const woody = new WoodenHouse("woodster road 15", "Dima");
+
+// woody.showStreet();
+
+// const middle = new House("Middle-earth");
+// middle.addTenants("Dima");
+// middle.addTenants("Alena");
+// middle.addTenants("Olly");
+// middle.showTenants();
+
+// const under = new House("Underground");
+
+// const copyMiddle = {
+//   showStreet: middle.showStreet,
+//   street: "street from Copy",
+// };
+
+// middle.showStreet();
+// under.showStreet();
+// copyMiddle.showStreet();
+
 class UseStatic {
-  private static count = 0;
-
-  constructor() {
-    UseStatic.count += 1;
-  }
-
-  public static itStaticMethod() {
-    console.log("Run static method");
-  }
-
-  public showCount() {
-    console.log(UseStatic.count);
-  }
+  pri;
 }
-
-const obj1 = new UseStatic();
-const obj2 = new UseStatic();
-const obj3 = new UseStatic();
-
-obj1.showCount();
-obj2.showCount();
-obj3.showCount();
-
-UseStatic.itStaticMethod();
