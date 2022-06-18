@@ -247,6 +247,4 @@ export {};
 // under.showStreet();
 // copyMiddle.showStreet();
 
-class UseStatic {
-  pri;
-}
+// Lesson 4 - practice
